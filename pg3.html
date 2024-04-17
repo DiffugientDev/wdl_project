@@ -1,0 +1,262 @@
+<!--python -m https.server -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!--meta-->
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>ᐉ Personality Test</title>
+	<meta name="description" content="What is your personality type? Find out here!">
+
+	<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:8000/files/clover.ico">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- preloads -->
+	<link rel="preload" as="image" href="http://localhost:8000/files/background.jpg.webp">
+
+	<!-- Bootstrap CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!--custom CSS-->
+	<link rel="stylesheet" href="http://localhost:8000/files/style.css">
+
+	<script src="http://localhost:8000/files/jquery.min.js.download"></script>
+
+  <style>
+    .banner{
+      background-image: url('http://localhost:8000/files/background.jpg.webp');
+    }
+  </style>
+
+</head>
+
+<body>
+  
+	<section class="new-header">
+		<div class="container-fluid p-0">
+			<nav class="navbar navbar-expand-xl navbar-dark bg-dark d-block">
+				<div class="d-flex justify-content-center"><a class="navbar-brand" href="http://localhost:8000/pg1.html"><img
+							src="http://localhost:8000/files/logo.jpg" alt="" class="img-fluid" style="max-width: 290px;"></a>
+				</div>
+				<div>.<br><br></div>
+			</nav>
+		</div>
+	</section>
+
+	<section class="banner banner-test">
+		<div class="banner-page parallax-window" data-parallax="scroll" data-image-src="http://localhost:8000/files/background.jpg.webp">
+			<div class="item">
+				<div class="text-banner">
+					<h1>RESULTS</h1>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+  <section class="content-section content-section-test">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-12 the-scroll">
+          <div class="ok-res">
+            
+            <div class="h2 text-center mb-2 mb-lg-2">Your Type:<br>
+              <span class="font-weight-bold h3 text-success" id="your_type">Lorem ipsum dolor sit amet.</span></div>
+            <div class="row">
+              <div class="h5 text-center w-75 mx-auto"></div>
+              <div class="ok-in quot-shadow">
+                <div class="text-center">
+                  <p id="para1"></p>
+                  <p id="para2"></p>
+                </div>
+              </div>
+              <div class="h5 text-center w-75 mx-auto"></div>
+              <div class="h5 text-center w-75 mx-auto"></div>
+              <div class="h5 text-center w-75 mx-auto">Check out your scores</div>
+              <div class="h5 text-center w-75 mx-auto"></div>
+
+              <div class = "col-12">
+                <div class="ok-in mb-3">
+                  <div class="row align-items-center">
+                    <div class="col-md-5">
+                      <div class="container m-4 quot-shadow ">
+                        <div class="container m-2">
+                            <canvas id="myChart" class="p-0"></canvas>
+                            <div class="container m-2">
+                                <h4>Attitude Latitude Graph</h4>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  <div class="col-md-7">
+                    <div class="container m-3">
+                        <div class="quot-shadow m-3">
+                          <h3 id="sc1"><u><!--ieScore--></u></h3>
+                          <!--progress bar-->
+                          <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="54" aria-valuemin="0" aria-valuemax="100" style="height: 25px;">
+                            <div class="progress-bar bg-info" id="ieScore"></div>
+                          </div>
+                        </div>
+                        <br><br>
+                        <div class="quot-shadow m-3">
+                            <h3 id="sc2"><u><!--opScore--></u></h3>
+                            <!--progress bar-->
+                            <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="12" aria-valuemin="0" aria-valuemax="100" style="height: 25px;">
+                              <div class="progress-bar bg-info" id="opScore"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>                
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="restart-test text-center" style="width: 100%"><a class="btn btn-my m-auto text-uppercase"
+              href="http://localhost:8000/pg1.html">Start again</a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+	<footer class="footer_wrapper">
+		<div class="social_wrapper bg-black">
+			<div class="container">
+				<div class="d-flex flex-wrap justify-content-between align-items-center">
+				</div>
+			</div>
+		</div>
+		<div id="copyright">
+			<div class="container">
+				<div class="d-flex justify-content-between">
+					<div id="copyright_left">Personality Tests for Fun</div><a id="toTop">Back to top</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+  <!--main script-->
+  <script src = "http://localhost:8000/pg3_code.js"></script>
+  <!--chart scripts-->
+			<!--d3-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js" integrity="sha512-vc58qvvBdrDR4etbxMdlTt4GBQk1qjvyORR2nrsPsFPyrs+/u5c3+1Ct6upOgdZoIl7eq6k3a1UPDSNAQi/32A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!--chart js-->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <!--graph-->
+  <script>
+      const chartData = 'http://localhost:8000/data.csv';
+
+      //parse the file from CSV to JSON
+      d3.csv(chartData).then(function(datapoints) {
+          const name = [sessionStorage.getItem('name')];
+          const ieScore = [sessionStorage.getItem('ieScore')];
+          const opScore = [sessionStorage.getItem('opScore')];
+          const randomR = [6];
+
+          for (let i = 1; i < datapoints.length; i++) {
+              name.push(datapoints[i].Name);
+              ieScore.push(datapoints[i].ieScore);
+              opScore.push(datapoints[i].opScore);
+              randomR.push(Math.floor(Math.random() * 10) + 2); // Generates random integer between 1 and 10
+          }
+          console.log(name, ieScore, opScore, datapoints.length);
+
+          // Setup data
+          const data = {
+              labels: name,
+              datasets: [{
+                  label: 'Score',
+                  data: datapoints.map((point, index) => ({ x: +ieScore[index], y: +opScore[index], r: randomR[index], backgroundColor: "rgba(0, 0, 0, 0.1)"})),
+                  borderWidth: 1
+              }]
+              
+          };
+
+          const quadrant = {
+              id: 'quadrant',
+              beforeDatasetsDraw(chart, args, pluginOptions) {
+                  const { ctx, chartArea: { left, top, right, bottom }, scales: { x, y } } = chart;
+
+                  // Draw horizontal line
+                  ctx.beginPath();
+                  ctx.moveTo(left, y.getPixelForValue(0));
+                  ctx.lineTo(right, y.getPixelForValue(0));
+                  ctx.lineWidth = 1;
+                  ctx.strokeStyle = 'black';
+                  ctx.stroke();
+
+                  // Draw vertical line
+                  ctx.beginPath();
+                  ctx.moveTo(x.getPixelForValue(0), top);
+                  ctx.lineTo(x.getPixelForValue(0), bottom);
+                  ctx.lineWidth = 1;
+                  ctx.strokeStyle = 'black';
+                  ctx.stroke();
+              }
+          };
+
+          // config
+          const config = {
+              type: 'bubble',
+              data,
+              options: {
+                  aspectRatio: 1, // Set aspect ratio to 1
+                  scales: {
+                      x: {
+                          min: -10,
+                          max: 10,
+                          ticks: {
+                              stepSize: 1,
+                              callback: function(value, index, values) {
+                                  if (value === -10) {
+                                      return 'Introvert';
+                                  } else if (value === 10) {
+                                      return 'Extrovert';
+                                  } else {
+                                      return value;
+                                  }
+                              }
+                          }
+                      },
+                      y: {
+                          min: -10,
+                          max: 10,
+                          ticks: {
+                              stepSize: 1,
+                              callback: function(value, index, values) {
+                                  if (value === 10) {
+                                      return 'Optimist';
+                                  } else if (value === -10) {
+                                      return 'Pessimist';
+                                  } else {
+                                      return value;
+                                  }
+                              }
+
+                          }
+                      }
+                  }
+              },
+              plugins: [quadrant]
+          };
+
+          // render init block
+          const myChart = new Chart(
+              document.getElementById('myChart'),
+              config
+          );
+      })
+
+
+  </script>
+
+  
+  
+	<link href="http://localhost:8000/files/main.min.js.download" rel="preload" as="script">
+	<script src="http://localhost:8000/files/main.min.js.download"></script>
+	<noscript>
+
+</body>
+
+</html>

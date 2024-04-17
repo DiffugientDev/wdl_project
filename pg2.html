@@ -1,0 +1,441 @@
+<!--python -m https.server -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!--meta-->
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>ᐉ Personality Test</title>
+	<meta name="description" content="What is your personality type? Find out here!">
+
+	<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:8000/files/clover.ico">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- preloads -->
+	<link rel="preload" as="image" href="http://localhost:8000/files/background.jpg.webp">
+
+	<!-- Bootstrap CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+	<link rel="stylesheet" href="http://localhost:8000/files/style.css">
+
+
+	<script src="http://localhost:8000/files/jquery.min.js.download"></script>
+    <style>
+        .banner{
+          background-image: url('http://localhost:8000/files/background.jpg.webp');
+        }
+      </style>
+
+</head>
+
+<body>
+ 
+
+	<section class="new-header">
+		<div class="container-fluid p-0">
+			<nav class="navbar navbar-expand-xl navbar-dark bg-dark d-block">
+				<div class="d-flex justify-content-center"><a class="navbar-brand" href="http://localhost:8000/pg1.html"><img
+							src="http://localhost:8000/files/logo.jpg" alt="" class="img-fluid" style="max-width: 290px;"></a>
+				</div>
+				<div>.<br><br></div>
+			</nav>
+		</div>
+	</section>
+
+	<section class="banner banner-test">
+		<div class="banner-page parallax-window" data-parallax="scroll"
+			data-image-src="">
+			<div class="item">
+				<div class="text-banner">
+					<h1>PART-2 OPTIMIST OR PESSIMIST</h1>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="content-section content-section-test">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-lg-12 hidden-test ">
+					<div class="row">
+
+						<!--Insert graph.....-->
+						<div class="container mx-5">
+							<div class="row justify-content-evenly">
+									<div class="col-md-5">
+											<div class="container m-4 quot-shadow ">
+													<div class="container m-2">
+															<canvas id="myChart" class="p-0"></canvas>
+															<div class="container m-2">
+																<h4>Attitude Latitude Graph</h4>
+														</div>
+													</div>
+											</div>
+									</div>
+									<div class="col-md-6 d-flex flex-column align-items-center justify-content-center">
+											<div class="container m-3">
+													
+													<div class="quot-shadow m-3">
+														<h3>INFORMATION ABOUT TEST</h3>
+														<p>This personality test is designed to help individuals gain insight into their social tendencies and outlook on life. By assessing traits related to introversion/extroversion and optimism/pessimism, the test provides a framework for understanding how individuals interact with the world and approach challenges. Through a series of questions, participants can reflect on their preferences for socializing, solitude, and their general attitude towards life events. This information can be valuable for personal growth, fostering self-awareness, and potentially understanding how to navigate social and professional situations more effectively.</p></div>
+											</div>
+
+                      <div class="quot-shadow mt-2 mx-4">
+                          <h3>OPTIMISM AND PESSIMISM</h3>
+                          <p>Optimism, a hopeful outlook on life, embraces possibilities and sees challenges as opportunities for growth. Conversely, pessimism, a negative perspective, dwells on limitations and anticipates failure. While optimism fosters resilience and innovation, pessimism can hinder progress by fostering fear and discouragement. Ultimately, attitude shapes reality.</p>
+                      </div>
+											</div>
+									</div>
+							</div>
+					</div>
+
+
+						<div class="col-12">
+							<!--Instructions-->
+							<div class="inst-test m-2">
+								<h2>Instructions</h2>
+								<p>You will be asked 10 questions; answer honestly, without thinking for too long.<br>
+                  You will be given 4 options based on their accuracy, with the left most being the most inaccurate and the right, the most accurate. Click the appropriate box accordingly.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-lg-12 the-scroll">
+					<div class="">
+						<div class="media-container-row">
+							<div class="col-12 ">
+								<div class="test-end">
+                  <div class="vop-test">
+                      <div class="h5v icon">1. Things usually turn out for the best for me.</div>
+                      <div
+                          class="vop-test-variant d-flex justify-content-between flex-wrap flex-column flex-md-row">
+                          <div class="form-group qweb2 d-flex align-items-center"><input
+                                  type="radio" class="check-input qweb" id="a1" name="question1"
+                                  value="1"><label for="a1">Disagree</label></div>
+                          <div class="form-group qweb2 d-flex align-items-center"><input
+                                  type="radio" class="check-input qweb" id="b1" name="question1"
+                                  value="2"><label for="b1">Disagree slightly</label></div>
+                          <div class="form-group qweb2 d-flex align-items-center"><input
+                                  type="radio" class="check-input qweb" id="c1" name="question1"
+                                  value="3"><label for="c1">Agree slightly</label></div>
+                          <div class="form-group qweb2 d-flex align-items-center"><input
+                                  type="radio" class="check-input qweb" id="d1" name="question1"
+                                  value="4"><label for="d1">Agree</label></div>
+                      </div>
+                  </div>
+                  <div class="vop-test">
+                      <div class="h5v icon">2. It's easy for me to relax.</div>
+                      <div
+                          class="vop-test-variant d-flex justify-content-between flex-wrap flex-column flex-md-row">
+                          <div class="form-group qweb2 d-flex align-items-center"><input
+                                  type="radio" class="check-input qweb" id="a2" name="question2"
+                                  value="1"><label for="a2">Disagree</label></div>
+                          <div class="form-group qweb2 d-flex align-items-center"><input
+                                  type="radio" class="check-input qweb" id="b2" name="question2"
+                                  value="2"><label for="b2">Disagree slightly</label></div>
+                          <div class="form-group qweb2 d-flex align-items-center"><input
+                                  type="radio" class="check-input qweb" id="c2" name="question2"
+                                  value="3"><label for="c2">Agree slightly</label></div>
+                          <div class="form-group qweb2 d-flex align-items-center"><input
+                                  type="radio" class="check-input qweb" id="d2" name="question2"
+                                  value="4"><label for="d2">Agree</label></div>
+                      </div>
+                  </div>
+                  <div class="vop-test">
+                      <div class="h5v icon">3. If something can go wrong, it will!</div>
+                      <div
+                          class="vop-test-variant d-flex justify-content-between flex-wrap flex-column flex-md-row">
+                          <div class="form-group qweb2 d-flex align-items-center"><input
+                                  type="radio" class="check-input qweb" id="a3" name="question3"
+                                  value="1"><label for="a3">Disagree</label></div>
+                          <div class="form-group qweb2 d-flex align-items-center"><input
+                                  type="radio" class="check-input qweb" id="b3" name="question3"
+                                  value="2"><label for="b3">Disagree slightly</label></div>
+                          <div class="form-group qweb2 d-flex align-items-center"><input
+                                  type="radio" class="check-input qweb" id="c3" name="question3"
+                                  value="3"><label for="c3">Agree slightly</label></div>
+                          <div class="form-group qweb2 d-flex align-items-center"><input
+                                  type="radio" class="check-input qweb" id="d3" name="question3"
+                                  value="4"><label for="d3">Agree</label></div>
+                      </div>
+                  </div>
+                  <div class="vop-test">
+                      <div class="h5v icon">4. My future's so bright, I've got to wear shades.</div>
+                      <div
+                          class="vop-test-variant d-flex justify-content-between flex-wrap flex-column flex-md-row">
+                          <div class="form-group qweb2 d-flex align-items-center"><input
+                                  type="radio" class="check-input qweb" id="a4" name="question4"
+                                  value="1"><label for="a4">Disagree</label></div>
+                          <div class="form-group qweb2 d-flex align-items-center"><input
+                                  type="radio" class="check-input qweb" id="b4" name="question4"
+                                  value="2"><label for="b4">Disagree slightly</label></div>
+                          <div class="form-group qweb2 d-flex align-items-center"><input
+                                  type="radio" class="check-input qweb" id="c4" name="question4"
+                                  value="3"><label for="c4">Agree slightly</label></div>
+                          <div class="form-group qweb2 d-flex align-items-center"><input
+                                  type="radio" class="check-input qweb" id="d4" name="question4"
+                                  value="4"><label for="d4">Agree</label></div>
+                      </div>
+                  </div>
+                  <div class="vop-test">
+                      <div class="h5v icon">5. I enjoy my friends a lot.</div>
+                      <div
+                          class="vop-test-variant d-flex justify-content-between flex-wrap flex-column flex-md-row">
+                          <div class="form-group qweb2 d-flex align-items-center"><input
+                                  type="radio" class="check-input qweb" id="a5" name="question5"
+                                  value="1"><label for="a5">Disagree</label></div>
+                          <div class="form-group qweb2 d-flex align-items-center"><input
+                                  type="radio" class="check-input qweb" id="b5" name="question5"
+                                  value="2"><label for="b5">Disagree slightly</label></div>
+                          <div class="form-group qweb2 d-flex align-items-center"><input
+                                  type="radio" class="check-input qweb" id="c5" name="question5"
+                                  value="3"><label for="c5">Agree slightly</label></div>
+                          <div class="form-group qweb2 d-flex align-items-center"><input
+                                  type="radio" class="check-input qweb" id="d5" name="question5"
+                                  value="4"><label for="d5">Agree</label></div>
+                      </div>
+                  </div>
+                  <div class="vop-test">
+                      <div class="h5v icon">6. I always keep busy.</div>
+                      <div
+                          class="vop-test-variant d-flex justify-content-between flex-wrap flex-column flex-md-row">
+                          <div class="form-group qweb2 d-flex align-items-center"><input
+                                  type="radio" class="check-input qweb" id="a6" name="question6"
+                                  value="1"><label for="a6">Disagree</label></div>
+                          <div class="form-group qweb2 d-flex align-items-center"><input
+                                  type="radio" class="check-input qweb" id="b6" name="question6"
+                                  value="2"><label for="b6">Disagree slightly</label></div>
+                          <div class="form-group qweb2 d-flex align-items-center"><input
+                                  type="radio" class="check-input qweb" id="c6" name="question6"
+                                  value="3"><label for="c6">Agree slightly</label></div>
+                          <div class="form-group qweb2 d-flex align-items-center"><input
+                                  type="radio" class="check-input qweb" id="d6" name="question6"
+                                  value="4"><label for="d6">Agree</label></div>
+                      </div>
+                  </div>
+                  <div class="vop-test">
+                      <div class="h5v icon">I hardly ever count on things going my way.</div>
+                      <div
+                          class="vop-test-variant d-flex justify-content-between flex-wrap flex-column flex-md-row">
+                          <div class="form-group qweb2 d-flex align-items-center"><input
+                                  type="radio" class="check-input qweb" id="a7" name="question7"
+                                  value="1"><label for="a7">Disagree</label></div>
+                          <div class="form-group qweb2 d-flex align-items-center"><input
+                                  type="radio" class="check-input qweb" id="b7" name="question7"
+                                  value="2"><label for="b7">Disagree slightly</label></div>
+                          <div class="form-group qweb2 d-flex align-items-center"><input
+                                  type="radio" class="check-input qweb" id="c7" name="question7"
+                                  value="3"><label for="c7">Agree slightly</label></div>
+                          <div class="form-group qweb2 d-flex align-items-center"><input
+                                  type="radio" class="check-input qweb" id="d7" name="question7"
+                                  value="4"><label for="d7">Agree</label></div>
+                      </div>
+                  </div>
+                  <div class="vop-test">
+                      <div class="h5v icon">8. It doesn't take much to get me angry.</div>
+                      <div
+                          class="vop-test-variant d-flex justify-content-between flex-wrap flex-column flex-md-row">
+                          <div class="form-group qweb2 d-flex align-items-center"><input
+                                  type="radio" class="check-input qweb" id="a8" name="question8"
+                                  value="1"><label for="a8">Disagree</label></div>
+                          <div class="form-group qweb2 d-flex align-items-center"><input
+                                  type="radio" class="check-input qweb" id="b8" name="question8"
+                                  value="2"><label for="b8">Disagree slightly</label></div>
+                          <div class="form-group qweb2 d-flex align-items-center"><input
+                                  type="radio" class="check-input qweb" id="c8" name="question8"
+                                  value="3"><label for="c8">Agree slightly</label></div>
+                          <div class="form-group qweb2 d-flex align-items-center"><input
+                                  type="radio" class="check-input qweb" id="d8" name="question8"
+                                  value="4"><label for="d8">Agree</label></div>
+                      </div>
+                  </div>
+                  <div class="vop-test">
+                      <div class="h5v icon">9. I do not get my hopes up</div>
+                      <div
+                          class="vop-test-variant d-flex justify-content-between flex-wrap flex-column flex-md-row">
+                          <div class="form-group qweb2 d-flex align-items-center"><input
+                                  type="radio" class="check-input qweb" id="a9" name="question9"
+                                  value="1"><label for="a9">Disagree</label></div>
+                          <div class="form-group qweb2 d-flex align-items-center"><input
+                                  type="radio" class="check-input qweb" id="b9" name="question9"
+                                  value="2"><label for="b9">Disagree slightly</label></div>
+                          <div class="form-group qweb2 d-flex align-items-center"><input
+                                  type="radio" class="check-input qweb" id="c9" name="question9"
+                                  value="3"><label for="c9">Agree slightly</label></div>
+                          <div class="form-group qweb2 d-flex align-items-center"><input
+                                  type="radio" class="check-input qweb" id="d9" name="question9"
+                                  value="4"><label for="d9">Agree</label></div>
+                      </div>
+                  </div>
+                  <div class="vop-test">
+                      <div class="h5v icon">10. When all is said and done, I expect more good things to happen to me than bad things to happen.</div>
+                      <div
+                          class="vop-test-variant d-flex justify-content-between flex-wrap flex-column flex-md-row">
+                          <div class="form-group qweb2 d-flex align-items-center"><input
+                                  type="radio" class="check-input qweb" id="a10" name="question10"
+                                  value="1"><label for="a10">Disagree</label></div>
+                          <div class="form-group qweb2 d-flex align-items-center"><input
+                                  type="radio" class="check-input qweb" id="b10" name="question10"
+                                  value="2"><label for="b10">Disagree slightly</label></div>
+                          <div class="form-group qweb2 d-flex align-items-center"><input
+                                  type="radio" class="check-input qweb" id="c10" name="question10"
+                                  value="3"><label for="c10">Agree slightly</label></div>
+                          <div class="form-group qweb2 d-flex align-items-center"><input
+                                  type="radio" class="check-input qweb" id="d10" name="question10"
+                                  value="4"><label for="d10">Agree</label></div>
+                      </div>
+                  </div>
+              </div>
+
+							</div>
+						</div>
+					</div>
+
+					<div class="text-center qend my-4 ">
+                        <a href="http://localhost:8000/pg3.html"><button type="submit" class="btn btn-my m-auto text-uppercase"
+							id="btn">Submit</button></a>
+                    </div>
+
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+	<footer class="footer_wrapper">
+		<div class="social_wrapper bg-black">
+			<div class="container">
+				<div class="d-flex flex-wrap justify-content-between align-items-center">
+				</div>
+			</div>
+		</div>
+		<div id="copyright">
+			<div class="container">
+				<div class="d-flex justify-content-between">
+					<div id="copyright_left">Personality Tests for Fun</div><a id="toTop">Back to top</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<script src="http://localhost:8000/pg2_code.js"></script>
+
+  <!--chart scripts-->
+			<!--d3-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js" integrity="sha512-vc58qvvBdrDR4etbxMdlTt4GBQk1qjvyORR2nrsPsFPyrs+/u5c3+1Ct6upOgdZoIl7eq6k3a1UPDSNAQi/32A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!--chart js-->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <!--graph-->
+  <script>
+      const chartData = 'http://localhost:8000/data.csv';
+
+      //parse the file from CSV to JSON
+      d3.csv(chartData).then(function(datapoints) {
+          const name = [];
+          const ieScore = [];
+          const opScore = [];
+          const randomR = [];
+
+          for (let i = 0; i < datapoints.length; i++) {
+              name.push(datapoints[i].Name);
+              ieScore.push(datapoints[i].ieScore);
+              opScore.push(datapoints[i].opScore);
+              randomR.push(Math.floor(Math.random() * 10) + 2); // Generates random integer between 1 and 10
+          }
+          console.log(name, ieScore, opScore);
+
+          // Setup data
+          const data = {
+              labels: name,
+              datasets: [{
+                  label: 'Score',
+                  data: datapoints.map((point, index) => ({ x: +ieScore[index], y: +opScore[index], r: randomR[index] })),
+                  borderWidth: 1
+              }]
+          };
+
+          const quadrant = {
+              id: 'quadrant',
+              beforeDatasetsDraw(chart, args, pluginOptions) {
+                  const { ctx, chartArea: { left, top, right, bottom }, scales: { x, y } } = chart;
+
+                  // Draw horizontal line
+                  ctx.beginPath();
+                  ctx.moveTo(left, y.getPixelForValue(0));
+                  ctx.lineTo(right, y.getPixelForValue(0));
+                  ctx.lineWidth = 1;
+                  ctx.strokeStyle = 'black';
+                  ctx.stroke();
+
+                  // Draw vertical line
+                  ctx.beginPath();
+                  ctx.moveTo(x.getPixelForValue(0), top);
+                  ctx.lineTo(x.getPixelForValue(0), bottom);
+                  ctx.lineWidth = 1;
+                  ctx.strokeStyle = 'black';
+                  ctx.stroke();
+              }
+          };
+
+          // config
+          const config = {
+              type: 'bubble',
+              data,
+              options: {
+                  aspectRatio: 1, // Set aspect ratio to 1
+                  scales: {
+                      x: {
+                          min: -10,
+                          max: 10,
+                          ticks: {
+                              stepSize: 1,
+                              callback: function(value, index, values) {
+                                  if (value === -10) {
+                                      return 'Introvert';
+                                  } else if (value === 10) {
+                                      return 'Extrovert';
+                                  } else {
+                                      return value;
+                                  }
+                              }
+                          }
+                      },
+                      y: {
+                          min: -10,
+                          max: 10,
+                          ticks: {
+                              stepSize: 1,
+                              callback: function(value, index, values) {
+                                  if (value === 10) {
+                                      return 'Optimist';
+                                  } else if (value === -10) {
+                                      return 'Pessimist';
+                                  } else {
+                                      return value;
+                                  }
+                              }
+
+                          }
+                      }
+                  }
+              },
+              plugins: [quadrant]
+          };
+
+          // render init block
+          const myChart = new Chart(
+              document.getElementById('myChart'),
+              config
+          );
+      });
+  </script>
+
+
+	<link href="http://localhost:8000/files/main.min.js.download" rel="preload" as="script">
+	<script src="http://localhost:8000/files/main.min.js.download"></script>
+	<noscript>
+
+</body>
+
+</html>
