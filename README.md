@@ -29,19 +29,35 @@ Ready to uncover more about your personality? Take the test now and embark on a 
 **Note:**
 
 Before starting the test, you must be on a local server port: 8000 located in the directory of the folder containing all files, since all files' links are on that port. This drawback will certainly be modified in the future.
+
 Here's how you can create a local server at port 8000:
+
 1. Using Python:
+   
    If you have Python installed, you can quickly create a local server, by navigating to the directory in command prompt and entering the command:
+   
              python3 -m http.server 8000
-2. Using Node.js
+   
+3. Using Node.js
+   
    If you use Node.js, you can create a local server using the http-server package:
-        i. First install the http-server package
+
+     i. First install the http-server package
+   
              npm install -g http-server
-       ii. Then navigate to the directory and run:
+   
+    ii. Then navigate to the directory and run:
+   
              http-server -p 8000
-3. Using PHP
+   
+4. Using PHP
+   
   If you have PHP installed you can use its built in server:
+  
             php -S localhost:8000
-4. Using Ruby'
+            
+5. Using Ruby:
+   
    If you have Ruby installed you can use its built in server:
+   
            ruby -run -e httpd . -p 8000
