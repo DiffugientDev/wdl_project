@@ -26,7 +26,8 @@ Understanding your personality can offer valuable insights into various aspects 
 
 Ready to uncover more about your personality? Take the test now and embark on a journey of self-discovery
 
-**Note**
+**Note:**
+
 Before starting the test, you must be on a local server port: 8000 located in the directory of the folder containing all files, since all files' links are on that port. This drawback will certainly be modified in the future.
 Here's how you can create a local server at port 8000:
 1. Using Python:
