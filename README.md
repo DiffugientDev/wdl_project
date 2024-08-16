@@ -2,7 +2,7 @@
 
 **Welcome to the Personality Test Website!**
 
-Thank you for visiting my website dedicated to exploring and understanding different personality traits. Our mission is to provide you with insights into your personality through a fun and insightful test. Whether you're curious about whether you're more extroverted or introverted, optimistic or pessimistic, our test is designed to help you gain clarity.
+Thank you for visiting my website dedicated to exploring and understanding different personality traits. Whether you're curious about whether you're more extroverted or introverted, optimistic or pessimistic, our test is designed to help you gain clarity.
 
 **How it Works:**
 
