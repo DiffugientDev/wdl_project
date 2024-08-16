@@ -6,7 +6,7 @@ Thank you for visiting our website dedicated to exploring and understanding diff
 
 **How it Works:**
 
-1. **Set-up: ** Download the entire folder and set up a local sever 8000 on that folder. Instructions to set up are given below.
+1. **Set up:** Download the entire folder and set up a local sever 8000 on that folder. Instructions to set up are given below.
 
 2. **Take the Test:** Begin by clicking on the "Start Test" button on the homepage. The test comprises a series of questions designed to gauge your preferences, behaviors, and outlook on life.
 
