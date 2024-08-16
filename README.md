@@ -22,14 +22,25 @@ Understanding your personality can offer valuable insights into various aspects 
 - Improve communication: Understand how you relate to others and adapt your communication style accordingly.
 - Make informed decisions: Align your choices with your personality preferences for greater satisfaction and fulfillment.
 
-**Privacy and Confidentiality:**
-
-Your privacy is important to us. Rest assured that all information provided during the test is kept confidential and will not be shared with any third parties. We adhere to strict privacy policies to ensure the security of your data.
-
 **Get Started:**
 
-Ready to uncover more about your personality? Take the test now and embark on a journey of self-discovery!
+Ready to uncover more about your personality? Take the test now and embark on a journey of self-discovery
 
-If you have any questions or feedback, feel free to reach out to us via the contact information provided on our website.
-
-Thank you for choosing our Personality Test Website. We look forward to helping you better understand yourself!
+**Note**
+Before starting the test, you must be on a local server port: 8000 located in the directory of the folder containing all files, since all files' links are on that port. This drawback will certainly be modified in the future.
+Here's how you can create a local server at port 8000:
+1. Using Python:
+   If you have Python installed, you can quickly create a local server, by navigating to the directory in command prompt and entering the command:
+             python3 -m http.server 8000
+2. Using Node.js
+   If you use Node.js, you can create a local server using the http-server package:
+        i. First install the http-server package
+             npm install -g http-server
+       ii. Then navigate to the directory and run:
+             http-server -p 8000
+3. Using PHP
+  If you have PHP installed you can use its built in server:
+            php -S localhost:8000
+4. Using Ruby'
+   If you have Ruby installed you can use its built in server:
+           ruby -run -e httpd . -p 8000
