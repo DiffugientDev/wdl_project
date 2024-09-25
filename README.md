@@ -30,6 +30,9 @@ Ready to uncover more about your personality? Take the test now and embark on a 
 
 **Instructions to set up local server:**
 
+   Note: First you must navigate to the folder where you saved the extracted version of the project
+                  use: cd <folder path> to reach directory
+
 Before starting the test, you must be on a local server port: 8000 located in the directory of the folder containing all files, since all files' links are on that port. This drawback will certainly be modified in the future.
 
 Here's how you can create a local server at port 8000:
